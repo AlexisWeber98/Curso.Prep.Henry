@@ -1,0 +1,64 @@
+conceptos:
+
+Variables= Se podría decir que una variable es un Espacio en Memoria que significa algo, es decir, un lugar en la memoria de la pc que guarda un dato;
+           El nombre de la variable es como identificamos ese dato, para despues "llamarlo" y así operar con él, es como una "Caja" donde guardamos informacíon.
+           invocamos la variable (la "caja") para operar con el valor de la misma (la informacion que guardamos dentro de la "caja")
+
+           ej:
+                  var                              nombre               =         "Alexis"
+          (declaracion de variable)      (nombre de la variable)              (informacion que contiene la variable)
+         
+          el ejemplo se resuelve de la siguiente manera: Declaramos la variable con el diminutivo 'var'; a su vez decimos que la variable es 'nombre', es decir,
+                                                         la variable se llama: 'nombre', y de esta manera podremos operar con ella en cualquier momento al invocarla; 
+                                                         con el signo "igual" (=) le decimos que lo que sigue es la información que contiene dicha variable,
+                                                          es decir, 'Alexis'; así podemos concluir que la variable 'nombre' significa 'Alexis'.
+
+
+Strings= Una string es una cadena de caracteres, un dato alfabético, es decir que cualquier dato escrito con letras es una string, y se presentan entre comillas ("string")
+         
+         ej:
+               string: "Hola"
+
+
+
+Argumentos= los argumentos son los datos con los cuales va a operar una función, así como en un debate los argumentos son los datos o la información que nos respalda
+            para ejecutar nuestra exposición, en una función un argumento es un dato sobre la cual se apoya la funcion para poder ejecutarse y operar
+
+
+Return= es la función que ejecuta los la exposición de los datos provistos, return significa 'retornar' o 'devolver', es decir nos devuelve el resultado de la operación 
+
+        ej:
+             Suma = 5 * 3
+             return Suma
+             
+             el ejemplo se resuelve de la siguiente manera: declaramos la funcion "Suma" y le decimos que su valor es 5*3; con 'return' hacemos que éste nos "devuevla"
+             el valor total de Suma, es decir: 5*3; es decir: 15  
+
+Valor If= los valores 'if' son valores condicionales, que si un dato es de cierta manera el resultado será uno, delo contrario el resultado será otro
+          
+          ej:
+                 var edad = 21
+                  
+                {  
+                  if (edad > 18){
+                  
+                     return "Es Mayor";
+
+                  }  return  "Es Menor";
+
+                }
+           
+            El ejemplo se resuelve de la siguiente manera: declaramos el valor de la variable 'edad' en 21; luego declaramos la función condicional y decimos que si (if)
+            la variable 'edad' es mayor a 18, entonces nos devuelva (return) "es Mayor, con el punto y coma cerramos la condicion verdadera, por lo tanto lo que sigue 
+            es el resultado si la condición es falsa, de esta manera decimos que si 'edad' NO es mayor a 18 nos devuelva (return) 'Es Menor'.
+
+
+Valor booleano= este es un valor que consta de dos estados 'true' (verdadero) y 'false' (falso) y nos confirma la veracidad de la operación
+  
+                ej:
+                 
+                         5 > 10
+                         false
+
+                      5 no es mayor a 10, por lo tanto: false (es falso)
+       
