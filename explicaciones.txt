@@ -61,4 +61,58 @@ Valor booleano= este es un valor que consta de dos estados 'true' (verdadero) y 
                          false
 
                       5 no es mayor a 10, por lo tanto: false (es falso)
+
        
+for: esta función crea un bucle por lo general se utiza para generar bucles de modo contador
+
+    ej:
+  
+       for                                  (var i = 0;                                       i < 11;                                               i ++)
+     
+   inicia fincion for.      expreción inicial, declara una var. por lo general     condición, una expresión paraser evaluada si la          expresión final, es una expresión para ser evaluada al final                                          
+                             se utiliza como variable base de contador en        expresión es verdadera, indica cuantas veces           de cada iiteración del bucle, por lo general se utiliza para
+                               este caso, i vale 0                               se repetirá el bucle mienrtras sea verdadera la        actualizar o incrementar la variable contador, en este caso
+                                                                                 expreción, en este caso el bucle se repetirá hasta     mientras la expresión anterior siga siendo verdadera, la 
+                                                                                 que la expresión "i es menor que 11" deje de ser       var i, se incrementará en uno
+                                                                                 verdadera
+
+                 
+  
+&&: esto significa Y, es decir que pone otra condición que tambíen debe cumplirse
+     
+     ej:  
+          if (1 > 2 && 1 > 0){
+
+          return "1 es mayor y positivo";
+         } return false;
+
+            sería así: if (si) 1 es mayor que 2 &&  (y además) es mayor que 0, entonces devuelve "1 es mayor y positivo", si no se cumplen estas condiciones, devuelve "false"
+
+
+||: significa O, esto quiere decir que agrega otra condición opcional
+      
+      ej:
+
+             if (1> 100 || 1 > 0){
+             return "1 es positivo";
+             } return false;
+
+                       sería así: if (si) 1 es mayor que 100 || (o) 1 es mayor que 0, entonces devuelve "1 es positivo" (porque ya sea que 1 es mayor a 0 o a 100, ambas condiciones demuestran que 1 es
+                                  positivo, 1 podría no ser mayor que 100, pero siempre y cuando sea mayor que 0 sabemos que será positivo)   
+
+
+!: se utiliza para negar
+    
+     ej:
+          if (5 != 6){
+          return "no es igual";
+          } return "es igual";
+
+                        sería así: if (si) 5 != (NO es igual a)  6, entonces devuelve "no es igual"...
+   
+  
+        
+
+
+
+      
