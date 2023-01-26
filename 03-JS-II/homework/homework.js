@@ -8,9 +8,12 @@ function obtenerMayor(x, y) {
   if (x > y){
     return x;
   }
-  return y;
-    if (x === y){
+  if (y > x){
+    return y;
+ }
+  if (x === y){
       return x || y;
+  
     }
   }
 function mayoriaDeEdad(edad) {
@@ -46,15 +49,20 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
-  if (idioma === "aleman"){
-    return "Guten Tag!";
-
-  } if (idioma === "mandarin"){
-  return "Ni Hao!";
-
-  } if (idioma === "ingles"){
-  return "Hello!";}
-return "Hola!";
+  switch (idioma) {
+    case "aleman":
+      return "Guten Tag!";
+       break;
+    case "mandarin":
+     return "Ni Hao!";
+       break;
+    case "ingles":
+      return "Hello!";
+       break;
+  default:
+    return "Hola!";
+      break;
+  }
 }
 
 function colors(color) {
@@ -91,7 +99,7 @@ function esDiezOCinco(numero) {
   case 5:
     return true;}
 
- return false;
+    return false;
 }
 
 function estaEnRango(numero) {
