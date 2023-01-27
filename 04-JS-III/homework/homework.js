@@ -98,7 +98,7 @@ function numeroMasGrande(numeros) {
   // Devuelve el número más grande
   // Tu código:
   var maximo = numeros[0];
-  for (var i = 0; i < numeros.length; i++){
+  for (var i = 1; i < numeros.length; i++){
     if (numeros[i] > maximo){
       return maximo = numeros[i];
     }
@@ -110,11 +110,11 @@ function multiplicarArgumentos() {
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
   if (arguments.length < 1 ){
-  return 0;
+    return 0;
   } 
-  var suma =1;
-  for (var i = 0; i < arguments.length; i ++){
-    suma = suma * arguments[i];
+    var suma =1;
+      for (var i = 0; i < arguments.length; i ++){
+           suma = suma * arguments[i];
   }  return suma;
 
   }
@@ -163,10 +163,11 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí
-  for (var i = 1; i<arreglo.length; i++){
-  if (arreglo[0] === arreglo[i++]){
+var numero = arreglo [0];  
+  for (var i = 1; i < arreglo.length; i++){
+  if (numero === arreglo[i]){
     return true;
-  } 
+    } 
 } return false;
 
 }
@@ -183,8 +184,8 @@ function mesesDelAño(array) {
       meses.push(array[i]);
     }
   } if (meses.length < 3){
-    return "No se encontraron los meses pedidos";
-  } return meses;
+      return "No se encontraron los meses pedidos";
+}return meses;
 
 }
 function mayorACien(array) {
@@ -210,18 +211,17 @@ function breakStatement(numero) {
   // Tu código:
   var  nuevoarray = [];
   var suma = numero;
-  for (var i = 0; i < 10; i++){
+   for (var i = 0; i < 10; i++){
     suma = suma + 2;
-    if ( suma === i)
-    break;
-      else {nuevoarray.push(suma);
-      } 
-  } if (i < 10)
-  return "Se interrumpió la ejecución";
-    else {
-    return nuevoarray;
-  } 
+        if ( suma === i){
+            break;
+         } nuevoarray.push(suma);
+        
+  } if (i < 10){
+     return "Se interrumpió la ejecución";  
+   } return nuevoarray; 
 }
+
 function continueStatement(numero) {
   //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
   //Guardar cada nuevo valor en un array.    
@@ -233,11 +233,11 @@ function continueStatement(numero) {
   var suma = numero;
   for (var i = 0; i < 10; i ++){
     if (i === 5)
-    continue;
-    else {
+      continue;
+     else {
         suma = suma +2;
       nuevoArray.push(suma);
-    } 
+     } 
   }
   return nuevoArray;
  }
