@@ -214,16 +214,12 @@ function doWhile(numero) {
   //Usar el bucle do ... while.
   var resultado = numero;
   var i = 0;
-  do{
-    i= i + 1;
+  do{ i= i + 1; 
     resultado = resultado + 5; 
-    }  while (i < 8);
-    return resultado;
+      }  while (i < 8);
+   return resultado;
   }
   
-
-
-
 // No modificar nada debajo de esta línea
 // --------------------------------
 
