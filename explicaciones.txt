@@ -109,9 +109,19 @@ for: esta función crea un bucle por lo general se utiza para generar bucles de 
           } return "es igual";
 
                         sería así: if (si) 5 != (NO es igual a)  6, entonces devuelve "no es igual"...
+
+
+Array:   un array es un conjunto o lista de variables (representada con corchetes ( [] ) con la que podemos operar o bien, operar sus parametros (variables de la lista) individualmente al "llamar"
+            su posicion ( [] ),
+
+       ej:
+             
+            numeros = []              la variable "numeros" es un array vacío (nada edentro de los corchetes)    
    
-  
-        
+            numeros1 = [1,2,3,4]   la variable "numeros1" es un array que contiene 5 parametros, en este caso numeros = en la posicion [0] tenemos 1, en la posicion [1] tenemos 2, en la posicion [3] tenemos 4
+                                                                                                                            
+            algoMas = [hola, que, tal] la variable "algoMas" es un array con 3 parametros, en este caso strings= en lA POSICION [0] tenemos "hola", en la posicion [1] tenemos "que", en la posicion [2] tenemos "tal"            
+                                                                                                                          
 
 
 
