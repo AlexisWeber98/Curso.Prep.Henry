@@ -1,18 +1,19 @@
 h1 {
-    position: relative; right: 25%; left: 25%;
+    display: flex;
+    align-items: center;
     background-color: rgba(255,255,255,0.5);
     color: blue
     
 }
 
 h3 {
-    
+display: inline;
     background-color: rgba(255,255,255,0.5);
     color: yellow
 }
 
 h4 {
-    
+    display: inline;
     background-color: rgb(255,255,255, 0.5);
     color: yellow;
 }
@@ -32,17 +33,16 @@ img {
   
   
 a {
-    position: relative; right: 25%; left: 25%;
-    display: block;
+    position: relative; right: 42%; left: 42%;
+    display: inline;
     background-color: rgba(255,255,255,0.5);
 }
 
 #spanId {
-    position: relative; right: 25%; left: 25%;
-    display: block;
+    position: relative; right: 38%; left: 38%;
+    display: inline;
     background-color: rgba(255,255,255,0.5);
     font-size: 18px;
-    margin: 50px;
 }
 
 body{
