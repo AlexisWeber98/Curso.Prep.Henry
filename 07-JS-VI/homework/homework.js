@@ -28,7 +28,7 @@ function sumarArray(numeros, cb) {
   
  var reduccion = 0
 for (let i = 0; i < numeros.length; i++) {
-  var reduccion = reduccion + numeros[i];  
+  reduccion = reduccion + numeros[i];  
 }
 cb(reduccion)
 }
@@ -38,7 +38,7 @@ function forEach(array, cb) {
   // Pista: Estarás invocando a `cb` varias veces (una por cada valor en la matriz)
   //Tu código:
   var nuevoArreglo = []
-array.forEach(function (element) {
+  array.forEach(function (element) {
   nuevoElemento = cb(element);
   nuevoArreglo.push(nuevoElemento)
 });
