@@ -5,16 +5,10 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
-  if (x > y){
-    return x;
-  }
-  if (y > x){
-    return y;
- }
   if (x === y){
-      return x || y;
-  
-    }
+    return x || y;
+  }
+  return Math.max(x,y);
   }
 function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
@@ -33,13 +27,17 @@ function conection(status) {
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
-  if (status === 1){
-    return "Online";
+  switch (status) {
+    case 1:
+      return "Online";
+      break;
+    case 2:
+      return "Away";
+      break;
+    default:
+      return "Offline";
+      break;
   }
-   if (status === 2){
-    return "Away";
- }
-   return "Offline";
 }
 
 function saludo(idioma) {
@@ -94,12 +92,10 @@ function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
- switch (numero){
-  case 10:
-  case 5:
-    return true;}
-
-    return false;
+ if (numero == 10 || numero ===5){
+  return true;
+ } 
+ return false;
 }
 
 function estaEnRango(numero) {
@@ -167,7 +163,6 @@ function esPrimo(numero) {
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
   if (numero < 2 ) return false;
-  if (numero === 2) return true;
   for (var i = 2; i < numero; i++){
        if (numero % i === 0){
          return false;
